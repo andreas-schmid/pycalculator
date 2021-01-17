@@ -16,6 +16,7 @@ from functools import partial
 ERROR_MSG = 'ERROR'
 __version__ = '0.1'
 __author__ = 'Andreas Schmid'
+__mail__ = 'andreas.josef.schmid@rwth-aachen.de'
 
 
 class PyCalcUi(QMainWindow):
@@ -94,8 +95,8 @@ class PyCalcUi(QMainWindow):
             <p>
               A simple calculator.
             </p>
-            <p><a href="mailto:andreas.josef.schmid@rwth-aachen.de">
-            Andreas Schmid</a></p>
+            <p><a href="mailto:%s">
+            %s</a></p>
             <p>
               This software is published under the
               <a href="http://www.gnu.org/licenses/gpl.html">GPL
@@ -104,7 +105,7 @@ class PyCalcUi(QMainWindow):
             <p style="font-weight: bold">
               Version: %s
             </p>
-            ''' % __version__)
+            ''' % (__mail__, __author__, __version__))
 
 
 class CalculatorCtrl(object):
